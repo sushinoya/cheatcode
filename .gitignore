@@ -1,0 +1,4 @@
+.vscode
+.cheatcode-env/
+__pycache__/
+.idea/
