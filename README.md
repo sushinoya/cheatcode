@@ -15,3 +15,7 @@ A tool to check plagiarism and code reuse at hackathons
 ```bash
 python3 main.py <path-to-config-file> <path-to-submissions-file>
 ```
+
+If the config file contains a `devpost_link` of the hackathon such as `https://hacknroll2020.devpost.com`, then the script automatically scrapes all the submissions from the hackathon's devpost page and finds the github repos and its contributors for code check.
+
+If a submissions file is provided, then devpost will not be scraped and the submissions file will be used for analysis.
