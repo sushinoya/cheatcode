@@ -1,4 +1,4 @@
-repo_url	authors
-https://github.com/chaitanyabaranwal/Word-Sticker-Bot.git	authorA,authorB,authorC,authorD
-https://github.com/sushinoya/lumos	sushinoya
-github.com/shitian007/PyTorch-BigGraph	shitian,facebook-github-bot,adamlerer
+devpost_url	repo_url	authors
+<devpost_url>	https://github.com/sushinoya/ggpy	authorA,authorB,authorC,authorD
+<devpost_url>	https://github.com/sushinoya/lumos	sushinoya
+<devpost_url>	github.com/shitian007/PyTorch-BigGraph	shitian,facebook-github-bot,adamlerer

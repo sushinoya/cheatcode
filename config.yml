@@ -1,10 +1,11 @@
 hackathon_config:
   start_at: 08-11-2020 16:00:00 +0530
   end_at: 09-11-2020 03:00:00 +0530
+  devpost_link: https://hacknroll2020.devpost.com
   checks:
     - substantial_authors_contributions
     - commit_only_during_hackathon
     - only_valid_authors
     - repo_not_forked
-    - no_commit_overlap_with_other_user_project
-    - source_code_not_similar_to_other_user_project
+#    - no_commit_overlap_with_other_user_project
+#    - source_code_not_similar_to_other_user_project

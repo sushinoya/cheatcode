@@ -3,13 +3,13 @@ from check import check
 
 
 def show_usage():
-	print("usage: main.py <config_file> <submissions_file>")
+	print("usage: main.py <config_file> optional[<submissions_file>]")
+	print("Either the config file should contain a link to the hackathon's devpost page. \
+		Or the user should provide a submissions file")
 
 
 if __name__ == "__main__":
-	if len(sys.argv) != 3:
+	if len(sys.argv) not in [2, 3]:
 		show_usage()
 	else:
-		config_file = sys.argv[1]
-		submissions_file = sys.argv[2]
-		check(config_file, submissions_file)
+		check(*sys.argv[1:])
