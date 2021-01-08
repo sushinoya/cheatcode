@@ -4,6 +4,7 @@ from datatypes import Submission, HackathonConfig
 from utils import get_all_registered_checks
 from typing import Dict, Union
 from dataclasses import asdict
+from checks.utils import get_repo_info
 
 
 def check(config_file: str, submissions_file: str):
@@ -29,9 +30,10 @@ def check(config_file: str, submissions_file: str):
 
 def check_submission(submission: Submission, config: HackathonConfig) -> Dict[Union[str, property], Union[str, bool]]:
 	check_outcome = {**asdict(submission), "remarks": ""}
+	repo_info = get_repo_info(submission.repo_url)
 
 	for check_name, checker_class in get_all_registered_checks():
-		did_pass_check, remarks = checker_class.perform_check(submission, config)
+		did_pass_check, remarks = checker_class.perform_check(submission, config, repo_info)
 		check_outcome[check_name] = did_pass_check
 
 		if remarks:

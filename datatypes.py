@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import List
 from datetime import datetime
+from github import Commit, Repository
 
 datetime_format = "%d-%m-%Y %H:%M:%S %z"
 
@@ -9,6 +10,12 @@ datetime_format = "%d-%m-%Y %H:%M:%S %z"
 class Submission:
 	repo_url: str
 	authors: List[str]
+
+
+@dataclass
+class RepoInfo:
+	repo: Repository.Repository
+	commits: List[Commit.Commit]
 
 
 @dataclass
