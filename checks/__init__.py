@@ -1,2 +1,3 @@
 from checks.base import BaseChecker
 from checks.repo_not_forked import RepoNotForkedChecker
+from checks.commit_only_during_hackathon import CommitOnlyDuringHackathonChecker

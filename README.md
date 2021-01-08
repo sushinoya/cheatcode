@@ -3,7 +3,7 @@ A tool to check plagiarism and code reuse at hackathons
 
 ## Setup 
 1. Add your github token to the `GITHUB_ACCESS_TOKEN` environment variable
-2. Update hackathon information in config.yaml
+2. Update hackathon information in config.yaml and add submissions to submissions.tsv
 3. Run:
     ```bash
     python3 -m venv .cheatcode-env
@@ -13,5 +13,5 @@ A tool to check plagiarism and code reuse at hackathons
 
 ## Usage
 ```bash
-python3 main.py <path-to-config-file>
+python3 main.py <path-to-config-file> <path-to-submissions-file>
 ```

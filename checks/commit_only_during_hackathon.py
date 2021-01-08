@@ -3,10 +3,10 @@ from datatypes import Submission, HackathonConfig
 from typing import Tuple, Optional
 
 
-class RepoNotForkedChecker(BaseChecker):
-	check_name = "repo_not_forked"
+class CommitOnlyDuringHackathonChecker(BaseChecker):
+	check_name = "commit_only_during_hackathon"
 
 	@staticmethod
 	def perform_check(submission: Submission, config: HackathonConfig) -> Tuple[bool, Optional[str]]:
 		# TODO Implement check method
-		return True, "We won"
+		return True, "Committed only during hackathon"

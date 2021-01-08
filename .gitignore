@@ -2,3 +2,4 @@
 .cheatcode-env/
 __pycache__/
 .idea/
+results.tsv
